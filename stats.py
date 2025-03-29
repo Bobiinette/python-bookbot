@@ -12,8 +12,9 @@ def get_number_of_each_characters(book_content):
             characters_count[c] = 1
     return characters_count
 
+# return liste of dictionnaries with the format with the format {"character": "a", "count": 10}
 def sort_character_dictionnary(character_dictionnary):
-    # A list of tuples with the form{"character": "a", "count": 10}
+    # A list of dictionnaries with the format {"character": "a", "count": 10}
     formated_dictionnary = []
     for c in character_dictionnary:
         duo = {"character": c, "count": character_dictionnary[c]}
