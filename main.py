@@ -18,7 +18,7 @@ def main():
         print("--------- Character Count -------")
         characters_sorted = sort_character_dictionnary(get_number_of_each_characters(get_book_text(book)))
         for c in characters_sorted:
-            print(f"{c["character"]}: {c["count"]}")
+            print(f"{c['character']}: {c['count']}")
     print("============= END ===============")
     return 0
 
