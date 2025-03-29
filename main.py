@@ -18,7 +18,7 @@ def main():
     # Report starts here
     print("============ BOOKBOT ============")
     for book in books:
-        print(f"Analyzing book found at {book[2:]}...")
+        print(f"Analyzing book found at {book}...")
         print("----------- Word Count ----------")
         print(f"Found {get_number_of_words(get_book_text(book))} total words")
         print("--------- Character Count -------")
