@@ -19,7 +19,8 @@ def sort_character_dictionnary(character_dictionnary):
     for c in character_dictionnary:
         duo = {"character": c, "count": character_dictionnary[c]}
         formated_dictionnary.append(duo)
-    return formated_dictionnary.sort(reverse=True, key=sort_on_count)
+    formated_dictionnary.sort(reverse=True, key=sort_on_count)
+    return formated_dictionnary
 
 def sort_on_count(d):
     return d["count"]
