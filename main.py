@@ -1,4 +1,5 @@
 from stats import get_number_of_words
+from stats import get_number_of_each_caracters
 
 def get_book_text(file_path):
     file_content = ""
@@ -10,6 +11,7 @@ def main():
     books = ["./books/frankenstein.txt"]
     for book in books:
         print(f"{get_number_of_words(get_book_text(book))} words found in the document")
+        print(get_number_of_each_caracters(get_book_text(book)))
     return 0
 
 main()
